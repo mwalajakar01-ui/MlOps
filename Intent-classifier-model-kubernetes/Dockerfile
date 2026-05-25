@@ -8,7 +8,7 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /app
 
 # Install system deps (if needed) and Python deps
-COPY requirements.txt .
+COPY Intent-classifier-model-kubernetes/requirements.txt .
 RUN apt-get update \
  && apt-get install -y --no-install-recommends gcc libc-dev \
  && pip install --no-cache-dir -r requirements.txt \

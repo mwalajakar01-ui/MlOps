@@ -20,7 +20,7 @@ RUN apt-get update \
 COPY . .
 
 # Train the Model
-RUN python3 model/train.py
+RUN python3 Intent-classifier-model-kubernetes/model/train.py
 
 # Expose the port your app runs on
 EXPOSE 6000

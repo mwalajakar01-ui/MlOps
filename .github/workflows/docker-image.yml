@@ -14,7 +14,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    # 1. Set a dynamic tag variable using the current timestamp
+    # 1. Set a dynamic tag variable using the current timestampp
     - name: Set dynamic image tag
       run: echo "TAG=$(date +%s)" >> $GITHUB_ENV
 
